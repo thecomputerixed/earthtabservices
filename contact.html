@@ -114,24 +114,25 @@
             <h6> Contact Us</h6>
             <h2>Get In Touch With Our Agents</h2>
           </div>
-          <p>Morbi non tortor hendrerit, imperdiet sem suscipit, ultrices turpis. Nulla eleifend vestibulum eros id scelerisque. Aliquam fringilla in sem aliquam hendrerit. Maecenas congue euismod tortor, eget interdum purus imperdiet ac. Donec vestibulum dignissim nisl ac accumsan. </p>
+          <p>Welcome to EARTHTAB SERVICES Your One-Stop Business Solution Hub </p>
+          <p>At EARTHTAB SERVICES, we are committed to making life easier for individuals, startups, and growing businesses. Whether you're seeking your dream job or the perfect hire, a property to sell or call home, or a partner to guide your business registration, we’re here for you.</p>
           <div class="row">
             <div class="col-lg-12">
               <div class="item phone">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
-                <h6>09155886007<br><span>Phone Number</span></h6>
+                <h6><a href="tel:+15551234567">09155886007</a><br><span>Phone Number</span></h6>
               </div>
 
               <div class="item phone">
                 <img src="assets/images/Whatsapp.png" alt="" style="max-width: 52px;">
-                <h6>09164151881<br><span>Whatsapp Number</span></h6>
+                <h6><a href="https://api.whatsapp.com/send?phone=+2349164151881">09164151881</a><br><span>Whatsapp Number</span></h6>
               </div>
 
             </div>
             <div class="col-lg-12">
               <div class="item email">
                 <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
-                <h6>Earthtabservices@gmail.com<br><span>Business Email</span></h6>
+                <h6><a href= "mailto:name@email.com">Earthtabservices@gmail.com</a><br><span>Business Email</span></h6>
               </div>
             </div>
           </div>
@@ -194,6 +195,31 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> 
+       (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
   </body>
 </html>
