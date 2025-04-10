@@ -41,6 +41,54 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+ul:after { clear: both; }
+
+li ul { display: none;  }
+
+ul li a {
+  
+  text-decoration: none;
+  
+  color: #fff;
+}
+
+ul li a:hover { background: grey; }
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: grey; }
+
+li:hover li a:hover { background: grey; }
+
+
+
+
+
+
+
+
+
+
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -79,9 +127,6 @@ figure, header, nav, section, article, aside, footer, figcaption {
   font-size: calc(1.5rem + 0.3vw);
   font-weight: bolder;
 }
-
-
-
 
 
 
