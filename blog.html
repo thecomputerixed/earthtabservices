@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Earthtab Services - Services </title>
-
+    <title>Earthtab Blog Page</title>
+ 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,10 +19,19 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
+     <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="slick/slick.css" rel='stylesheet' /> <!-- https://kenwheeler.github.io/slick/ -->
+    <link href="slick/slick-theme.css" rel='stylesheet' />
+    <link href="css/dynamic.css" rel="stylesheet" />
+
+
+    
+
   </head>
 
 <body>
-
+  
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -64,7 +73,7 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                  <a href="index.html" style="width: 200px;
+                    <a href="index.html" style="width: 200px;
                                                 height: 80px;" >
                        <!--  <h1 style="color: red;">Earthtab</h1>-->
                        <img class="img-responsive" alt="Responsive image"  src="img/logo.png">
@@ -72,20 +81,40 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
+     
+
+                
+
+
+
+
+
                       <li><a href="index.html">Home</a></li>
-                      <li><a href="services.html" class="active" >Services</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="contact.html" >Contact Us</a></li>
-                      <li><a href="about.html"  >About</a></li>
+
+    <div class="dropdown">
+                 <button class="dropbtn" ><a style="color:black;" href="services.html">Services</a>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+        </div>
 
 
-                   
 
-                        <li><a href="login.html"  >Login</a></li>
-                          <li><a href="dashboard.html" >Dashboard</a></li>
-
-                       <li><a href="contact.html"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                   <li><a href="contact.html"  class="active">Blog</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About</a></li>
+                         <li><a href="login.html"  >Login</a></li>
+                          <li><a href="dashboard.html"  class="active">Dashboard</a></li>
+                      <li><a href="contact.html"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
                   </ul>   
+
+
+
+
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -101,55 +130,54 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <span class="breadcrumb"><a href="index.html">Home</a> / Services</span>
-          <h3>Services</h3>
+          <span class="breadcrumb"><a href="index.html">Home</a>  /  Blog</span>
+          <h3 data-filter=".p1">Blog</h3>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section properties">
+
+    
+<div class="section properties">
     <div class="container">
-      <ul class="properties-filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
+      <ul class="properties-filter " >
+      
          <li>
-          <a href="#!" data-filter=".htl">Hotel Booking Service</a>
+          <a href="#!" data-filter=".p1">1</a>
         </li>
         <li>
-          <a href="#!" data-filter=".adv">Real Estate Service</a>
+          <a href="#!" data-filter=".p2">2</a>
         </li>
          <li>
-          <a href="#!" data-filter=".rac">Media Services</a>
+          <a href="#!" data-filter=".p3">3</a>
         </li>
          <li>
-          <a href="#!" data-filter=".flg">Flight Booking Service</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".hr">Human Resources services</a>
+          <a href="#!" data-filter=".p4">4</a>
         </li>
        
+       
       </ul>
-      
-      <div class="row properties-box">
+
+
+  
+ <div class="row properties-box">
 
 
 
-<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  htl">
-        <div class="item" >
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p1">
+         <div class="item"  style="background: grey;">
+            <a href="blogs/blog-hotel.html"><img src="assets/images/hotel.jpg" alt=""></a>
 
-            <a href="services-hotel.html"><img src="assets/images/hotel.jpg" alt=""></a>
-            <span class="category">Hotel Booking Service</span>
           
-            <h4><a href="services-hotel.html">Make your Hotel Reservations with us</a></h4>
+            <h4><a href="blogs/blog-hotel.html" style="justify-content: center;">Make your Hotel Reservations with us</a></h4>
             <ul>
-              <li>Hotel Reservations/Booking <span></span></li>
+              <li>Getting Started <span></span></li>
             
              
             </ul>
             <div class="main-button">
-              <a href="services-hotel.html">See More</a>
+              <a href="blogs/blog-hotel.html">Read More</a>
             </div>
           </div>
         </div>
@@ -157,79 +185,76 @@
 
 
 
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
-          <div class="item" >
+     <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p1">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-cac.html"><img src="assets/images/cac.jpg" alt=""></a>
 
-            <a href="services-realestate.html"><img src="assets/images/property-01.jpg" alt=""></a>
-            <span class="category">Real Estate Service</span>
           
-            <h4><a href="services-realestate">We Buy and Sell Real Estate</a></h4>
+            <h4><a href="blogs/blog-cac.html">Info on CAC Registration</a></h4>
             <ul>
-              <li>Lands <span></span></li>
-              <li>Landed Properties <span></span></li>
+              <li>CAC Registration<span></span></li>
+            
              
             </ul>
             <div class="main-button">
-              <a href="services-realestate">See More</a>
+                 <a href="blogs/blog-cac.html">Read More</a>
             </div>
           </div>
         </div>
 
 
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
-        <div class="item"  >
 
-            <a href="services-graphics.html"><img src="assets/images/graphics.jpg" alt=""></a>
-            <span class="category">Media Services</span>
+
+  <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p1">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-flight.html"><img src="assets/images/flg.jpg" alt=""></a>
+
           
-            <h4><a href="services-graphics.html"> Elevate Your Brand with EarthTab Media Services</a></h4>
-            <ul>
-               <li>Graphics design <span></span></li>
-              <li>Banners and more <span></span></li>
-             
-            </ul>
-            <div class="main-button">
-              <a href="services-graphics.html">See More</a>
-            </div>
-          </div>
-        </div>
-
-           <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 flg">
-           <div class="item" >
-
-            <a href="services-flight.html"><img src="assets/images/flg.jpg" alt=""></a>
-            <span class="category">Flight Booking </span>
-          
-            <h4><a href="services-flight.html">Let us help you Book your next flight</a></h4>
+            <h4><a href="blogs/blog-flight.html">Info about Flight Booking</a></h4>
             <ul>
               <li>Flight Booking <span></span></li>
             
              
             </ul>
             <div class="main-button">
-              <a href="services-flight.html">See More</a>
+                 <a href="blogs/blog-flight.html">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p1">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-graphics.html"><img src="assets/images/graphics.jpg" alt=""></a>
+
+          
+            <h4><a href="blogs/blog-graphics.html">Info about Media Services</a></h4>
+            <ul>
+              <li>Media Services<span></span></li>
+            
+             
+            </ul>
+            <div class="main-button">
+         <a href="blogs/blog-graphics.html">Read More</a>
             </div>
           </div>
         </div>
 
 
 
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p1">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-realestate.html"><img src="assets/images/deal-03.jpg" alt=""></a>
 
-
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 hr">
-        <div class="item"  >
-
-            <a href="services-humanresources.html"><img src="assets/images/hr.jpg" alt=""></a>
-            <span class="category">Human Resource Service</span>
-        
-            <h4><a href="services-humanresources.html">We Recuit workers for companies and Help Job seekers find thier dream jobs</a></h4>
+          
+            <h4><a href="blogs/blog-realestate.html">Info about investing in Real Estate</a></h4>
             <ul>
-              <li>Recuitment <span></span></li>
-              <li>Job search<span></span></li>
+              <li>Real Estate<span></span></li>
+            
              
             </ul>
             <div class="main-button">
-              <a href="services-humanresources.html">See More</a>
+             <a href="blogs/blog-realestate.html">Read More</a>
             </div>
           </div>
         </div>
@@ -238,84 +263,80 @@
   
 
 
-    
+    <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p1">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-npc.html"><img src="assets/images/npc.png" alt=""></a>
 
-
-         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 flg">
-          <div class="item"  >
-
-            <a href="services-visa.html"><img src="assets/images/visa2.jpg" alt=""></a>
-            <span class="category">Visa Application Service</span>
           
-            <h4><a href="services-visa.html">Are you looking for Visa Application?</a></h4>
+            <h4><a href="blogs/blog-npc.html">Info about Birth Certificate</a></h4>
             <ul>
-              <li>Visa Application and documents processing<span></span></li>
-         
-             
-            </ul>
-            <div class="main-button">
-              <a href="services-visa.html">See More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  str rac">
-          <div class="item" >
-
-            <a href="services-website.html"><img src="assets/images/web.jpg" alt=""></a>
-            <span class="category">Website Creation Service</span>
-            
-            <h4><a href="services-website.html">We can help Creation professional websites for your business</a></h4>
-            <ul>
-              <li>Professional websites <span></span></li>
-              <li>Budget websites<span></span></li>
-             
-            </ul>
-            <div class="main-button">
-              <a href="services-website.html">See More</a>
-            </div>
-          </div>
-        </div>
-
-
-
-      
-
-
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
-           <div class="item"  >
-
-            <a href="services-cac.html"><img src="assets/images/cac.jpg" alt=""></a>
-            <span class="category">CAC Registration Service</span>
-          
-            <h4><a href="services-cac.html">Get your Business Registered</a></h4>
-            <ul>
-              <li>Register your Business <span></span></li>
-              <li>Register your Company <span></span></li>
-             
-            </ul>
-            <div class="main-button">
-              <a href="services-cac.html">See More</a>
-            </div>
-          </div>
-        </div>
-
-
-
- <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
-          <div class="item" >
-
-            <a href="services-npc.html"><img src="assets/images/npc.png" alt=""></a>
-            <span class="category">NPC Registration Service</span>
-          
-            <h4><a href="services-npc.html">Get your Birth Certificate from us today</a></h4>
-            <ul>
-              <li>Birth Certificate <span></span></li>
+              <li>Birth Certificate<span></span></li>
             
              
             </ul>
             <div class="main-button">
-              <a href="services-npc.html">See More</a>
+             <a href="blogs/blog-npc.html">Read More</a>
+            </div>
+          </div>
+        </div>
+
+<!-- END PAGE 1-->
+
+
+
+<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p2">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-website.html"><img src="assets/images/web.jpg" alt=""></a>
+
+          
+            <h4><a href="blogs/blog-website.html">Info about Website Creation</a></h4>
+            <ul>
+              <li>Website Creation <span></span></li>
+            
+             
+            </ul>
+            <div class="main-button">
+                 <a href="blogs/blog-website.html">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+
+  
+<div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p2">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-visa.html"><img src="assets/images/visa2.jpg" alt=""></a>
+
+          
+            <h4><a href="blogs/blog-visa.html">Info about Visa Application</a></h4>
+            <ul>
+              <li>Visa Application<span></span></li>
+            
+             
+            </ul>
+            <div class="main-button">
+               <a href="blogs/blog-visa.html">Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6  p2">
+          <div class="item"  style="background: grey;">
+            <a href="blogs/blog-humanresources.html"><img src="assets/images/hr.jpg" alt=""></a>
+
+          
+            <h4><a href="blogs/blog-humanresources.html">Info about Human Resource Services</a></h4>
+            <ul>
+              <li>Human Resource Services <span></span></li>
+            
+             
+            </ul>
+            <div class="main-button">
+          <a href="blogs/blog-humanresources.html">Read More</a>
             </div>
           </div>
         </div>
@@ -364,16 +385,22 @@
 
  -->
 
+
+
         </div>
       </div>
-    
+
+
+
+
+
 
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2025 Earthtab-Services., Ltd. All rights reserved. 
+ <p>Copyright © 2025 Earthtab-Services., Ltd. All rights reserved. 
         
-       
+        
       </div>
     </div>
   </footer>
@@ -386,6 +413,29 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+
+
+<style type="text/css">
+ 
+
+</style>
+
+  <script type="text/javascript">
+  
+$(function () {
+      $('.pagination li').click(changePage);
+      $('.portfolio-item').magnificPopup({ 
+        type: 'image',
+        gallery:{
+          enabled:true
+        }
+      });
+    });
+
+}
+
+
+  </script>
 
   </body>
 </html>
